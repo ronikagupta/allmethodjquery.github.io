@@ -1,0 +1,1 @@
+# allmethodjquery.github.io
