@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px black;
+            width: 70%;
+            height: 200px;
+            color: black;
+            background-color: chartreuse;
+            margin-left: 10%;
+            padding :2em;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .form{
+            margin-top: 2%;
+            padding: 2em;
+        }
+        .div{
+            border: 2px black;
+            width: 70%;
+            height: 100px;
+            color:blanchedalmond;
+            background-color: black;
+            margin-left: 10%;
+            padding :2em;
+        }
+        .div1
+        {
+            width: 70%;
+            height: 200px;
+            background-color: cornflowerblue;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .div2
+        {
+            width: 70%;
+            height: 300px;
+            background-color: rgb(54, 236, 197);
+            padding: 10px;
+            border: 1px solid #000;
+        
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .div3
+        {
+            width: 70%;
+            height: 300px;
+            background-color: rgb(203, 97, 235);
+            padding: 10px;
+            border: 1px solid #000;
+        
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .div4
+        {
+            width: 70%;
+            height: 300px;
+            background-color: rgb(233, 45, 102);
+            padding: 10px;
+            border: 15px solid #000;
+        
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        
+        .div5
+        {
+            width: 70%;
+            height: 500px;
+            background-color: rgb(230, 84, 222);
+            padding: 10px;
+            border: 2px solid #000;
+        
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .div6
+        {
+            width: 70%;
+            height: 500px;
+            background-color: rgb(13, 101, 160);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .div7
+        {
+            width: 20%;
+            height: 200px;
+            background-color: rgb(53, 221, 179);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        
+        .red{
+            color:red;
+        }
+        .first{
+            color:rgb(226, 135, 49);
+        }
+        .second{
+            color:teal;
+        }
+
+        .main-outer{
+            width: 80%;
+            height: 500px;
+            background-color: rgb(82, 207, 24);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .outer{
+            width: 60%;
+            height: 400px;
+            background-color: rgb(213, 240, 63);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-left: 20%;
+            
+        }
+        .child{
+            width: 40%;
+            height: 300px;
+            background-color: rgb(235, 92, 35);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .child-c{
+            width: 30%;
+            height: 200px;
+            background-color: rgb(170, 214, 149);
+            padding: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color:black;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JQurry Keybord Event</h1>
+    <div class="box"> 
+    <h1>Text Box</h1>   
+    <p>When we press any key body color will change and when we up the key again body color will cgange</p>
+    <p>right click in this box color will change in orange</p>
+    <button class="click" >set button</button>
+    <button class="css" >addCss</button>
+</div>
+    <h1>Form Event</h1>
+    <form action=""class="form">
+        <label for=""><b>Name</b></label>
+        <input type="text" id="sname" style="margin-top: 2%;"><br>
+        <label for=""><b>Class</b></label>
+        <input type="text" name="" id="sclass"style="margin-top: 2%;"><br>
+        <label for=""><b>Country</b></label>
+        <select name="" id="scountry"style="margin-top: 2%;">
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="">Bangladesh</option>
+            <option value="">Sri Lanka</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <div class="div"id="test"><h1>Mouse Event</h1><p>when we click in div color will we change  in blue and on dblcick div color change in pink </p></div>
+    <button class="add">addClass</button>
+    <button class="remove">removeClass</button>
+    <button class="toggle">toggleClass</button>
+
+    <div class="div1"><h1>JQuery Window Events</h1>
+    <p>HomeList of Indian HolidaysRepublic Day Holiday in 2021
+        Republic Day Holiday 2021
+        Every year Republic Day is celebrated in India on 26th January with grandeur. Magnificent parades at Janpath, New Delhi, comprising the Indian National Army and national flag hoisting in various parts of the country are common practices followed on this day. In year 2021, it will mark India’s 72th Republic Day.Republic Day is celebrated all over India with great pride and zeal. It’s a day to honour the Constitution of independent India. National flag hoisting in schools and colleges are common. Cultural events championing India’s struggle for freedom is held nationwide. In New Delhi, the national flag is hoisted by the President of India at India Gate.
+
+        The grandest of parades takes place at Rajpath, New Delhi. The parade is presided over by the Indian President and is organised by the Ministry of Defence. Other than showcasing its military prowess, the event also champions India’s diverse culture.
+        
+        The event also pays homage to the martyrs who have sacrificed their lives for the country. The Prime Minister of India honours the martyrs by putting a wreath at the Amar Jawan Jyoti at India Gate. It’s followed by a 21-gun salute, national flag hoisting, and national anthem. Awards are presented to the brave soldiers in the form of Paramvir Chakra, Ashok Chakra, and Vir Chakra. Even children a</p></div>
+    
+        <div class="div2"><h1>Text Box</h1>
+        <p>When we press any key body color will change and when we up the key again body color will cgange</p></div>
+   
+        <button class="append">Append</button>
+        <button class="prepend">Prepend</button>
+        
+        <button class="after">After</button>
+        <button class="before">Before</button>
+
+    <div class="div3"><h1>Text Box</h1><p style="color:red">
+        The celebration takes place all over the country, however, Delhi being the capital of India, witnesses the grandest of Republic Day celebrations.
+    </p>
+        <p style="color:pink"> The celebration takes place all over the country, however, Delhi being the capital of India, witnesses the grandest of Republic Day celebrations.
+    </p>
+    <p style="color:yellow"> The celebration takes place all over the country, however, Delhi being the capital of India, witnesses the grandest of Republic Day celebrations.
+    </p>
+
+   </div> 
+
+   <button class="replace">Replace</button>
+   <button class="wrap">Wrap</button>
+   <button class="unwrap">unWrap</button>
+   
+   <div class="div4"><h1>Text Box</h1><p>The celebration takes place all over the country, however, Delhi being the capital of India, witnesses the grandest of Republic Day celebrations.
+    </p>
+    </div>
+    <button class="width">Width</button>
+    <button class="height">height</button>
+
+    <button class="position">position</button>
+    <button class="offset">offset</button>
+
+    <div class="div5">
+        <h1>Scroll Top and Scroll left</h1>
+        <p>Republic Day is celebrated all over India with great pride and zeal. It’s a day to honour the Constitution of independent India. National flag hoisting in schools and colleges are common. Cultural events championing India’s struggle for freedom is held nationwide. In New Delhi, the national flag is hoisted by the President of India at India Gate.
+
+            The grandest of parades takes place at Rajpath, New Delhi. The parade is presided over by the Indian President and is organised by the Ministry of Defence. Other than showcasing its military prowess, the event also champions India’s diverse culture.
+            
+            The event also pays homage to the martyrs who have sacrificed their lives for the country. The Prime Minister of India honours the martyrs by putting a wreath at the Amar Jawan Jyoti at India Gate. It’s followed by a 21-gun salute, national flag hoisting, and national anthem. Awards are presented to the brave soldiers in the form of Paramvir Chakra, Ashok Chakra, and Vir Chakra. Even children and general citizens who have displayed courage in times of adversity are conferred with awards.</p>
+    </div>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="fadein">FadeIn</button>
+    <button class="fadeout">FadeOut</button>
+    <button class="fadetoggle">FadeToggle</button>
+
+    <h1>Jquery SlideDown & slideUp Method</h1>
+    <div class="div6"><h1>Text Box</h1><p>The celebration takes place all over the country, however, Delhi being the capital of India, witnesses the grandest of Republic Day celebrations.
+    </p></div>
+
+    <button class="slideup">SlideUp</button>
+    <button class="slidedown">SlideDown</button>
+    <button class="slidetoggle">SlideToggle</button>
+
+    <div class='div7'><h1>Animate method</h1></div>
+    <button class="animate">Animate</button>
+
+    <h1>Jquery Ancestor Method</h1>
+    <div class="main-outer">
+      <h2>Main Outer</h2>
+      <div class="outer">
+          <h2>Outer</h2>
+          <div class="inner">
+              <h2 class="child">Inner</h2>
+              
+            
+              
+          </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                $('.box').css('background-color','green')
+            })
+          
+        
+            $('body').keyup(function(){
+                $('.box').css('background-color','yellow')
+            }) 
+            // form
+            $('#sname,#sclass,#scountry').focus(function(){
+                $(this).css('background-color','gray');
+            });  
+            $('#sname,#sclass,#scountry').blur(function(){
+                $(this).css('background-color','');
+            });    
+            $('#sname,#sclass').select(function(){
+                $(this).css('background-color','red');
+            });  
+            $('.form').submit(function(){
+                console.log("Form Submitted");
+            });  
+            // mouseEvent
+            $('.div').click(function(){
+                $('.div').css('background-color','blue')
+            });
+            var a = $('.div').html();
+            console.log(a);
+            $
+            // dblclick
+            $('.div').dblclick(function(){
+                $('.div').css('background-color','pink')
+            })
+            // contextmenu
+            $('.box').contextmenu(function(){
+                $('.box').css('background-color','orange');
+            })
+            $('body').mouseenter(function(){
+                $('body').css('background-color','red');
+            })
+            $('body').mouseleave(function(){
+                $('body').css('background-color','skyblue');
+            })
+            // window Events
+            $('.div1').scroll(function(){
+                console.log('you are scrolling');
+            })
+            $(window).resize(function(){
+                console.log('you are resizing window');
+            })
+            // get method
+            var a= $('.box').html();
+            console.log(a);
+           
+            var a= $('.box').text();
+            console.log(a);
+
+            var a= $('.box').attr('class');
+            console.log(a);
+           
+            // val method
+            $('.form').submit(function(){
+               var name= $('#sname').val();
+               var classname= $('#sclass').val();
+               var country= $('#scountry').val();
+               alert('Hello'+ ' '+name+' '+ classname+' '+ "country : "+ country);
+            })
+            // set method
+
+           $('.click').click(function(){
+               $('.box h1').text('Hellow Jquery thanks for the short code')
+           })
+
+           $('.click').dblclick(function(){
+               $('.box h1').text('most prefrable animation by JQuery')
+               $('.box h1').attr('class','red');
+           });
+
+        //    val set method
+             $('#sname').val('ridhima');
+             $('#sclass').val('Mca');
+         
+        //  add class()
+             $('.add').click(function(){
+                 $('.div,h1').addClass('first');
+             })
+        //    remove class()
+        $('.remove').click(function(){
+                 $('.div,h1').removeClass('first');
+             })
+        //  toggle button()
+        $('.toggle').click(function(){
+                 $('.div,h1').toggleClass('first');
+             })
+        // add inline css()
+        $('.css').click(function(){
+                    $('.box').css({
+                        'background-color':'rgb(142, 207, 38)',
+                        'color':'yellow',
+                        'border':'5px dotted green'
+                    })
+                })
+        // on function
+         $('body').on('click',function(){
+             $(this).css('background-color','rgb(82, 180, 286)')
+        })
+        });
+        // append
+        $('.append').click(function(){
+            $('.div2').append("<h2>Append function is fire<h2>");
+        })
+
+        $('.prepend').click(function(){
+            $('.div2').prepend("<h2>prepend function is fire<h2>");
+        })
+        
+        $('.after').click(function(){
+            $('.div2').after("<h2> after function is fire<h2>");
+        })
+        $('.before').click(function(){
+            $('.div2').before("<h2>Before function is fire<h2>");
+        })
+        //repalce with
+
+        $('.replace').click(function(){
+            $('.div3 p:nth-child(2)').replaceWith("<h3> replace with function fire </h3>")
+        })
+        // Wrap
+        $('.wrap').click(function(){
+            $('.div3 p').wrap('<h4></h4>');
+        })
+        // unwrap
+        $('.unwrap').click(function(){
+            $('.div3 p').unwrap();
+        })
+        // width height
+        $('.width').click(function(){
+           console.log( "width : " + $('.div4').width());
+        })
+        $('.width').click(function(){
+           console.log( "innerwidth : " +  $('.div4').innerWidth());
+        })
+        $('.width').click(function(){
+           console.log( "outerwidth : " +  $('.div4').outerWidth(true));
+        })
+      
+        // height
+        $('.height').click(function(){
+            console.log("height : " + $('.div4').height());
+        })
+
+        $('.height').click(function(){
+            console.log("innerheight : " + $('.div4').innerHeight());
+        })
+
+        $('.height').click(function(){
+            console.log("outerheight : " + $('.div4').outerHeight());
+        })
+        // position method or offset
+        $('.position').click(function(){
+            console.log($('.div4').position());
+        })
+        
+        $('.offset').click(function(){
+            console.log($('.div4').offset());
+        })
+       // hide show toggle
+        $('.hide').click(function(){
+            $('.div5 p').hide("slow");
+        })
+        $('.show').click(function(){
+            $('.div5 p').show("slow");
+        })
+        // fadein fadeout fadetoggle fadeto
+        $('.fadein').click(function(){
+            $('.div5').fadeIn('3000');
+        })
+        $('.fadeout').click(function(){
+            $('.div5').fadeOut('3000');
+        })
+        $('.fadetoggle').click(function(){
+            $('.div5').fadeToggle('3000');
+        })
+        // Slide method slid up slid toggle
+        $('.slideup').click(function(){
+            $('.div6').slideUp();
+        })
+        $('.slidedown').click(function(){
+            $('.div6').slideDown();
+        })
+        $('.slidetoggle').click(function(){
+            $('.div6').slideToggle();
+        })
+        // animate method
+        $('.animate').click(function(){
+            $('.div7').animate({left :'150px'},'slow') ;   
+            $('.div7').animate({top :'-250px'},'slow') ; 
+            $('.div7').animate({width :'70%'},'slow') ; 
+            $('.div7').animate({marginBottom :'250px'},'slow') ;   
+            $('.div7').animate({fontSize :'30px'},'slow') ;
+        
+        })
+        // Method  Chaining
+        
+        
+        
+      
+    </script>    
+    
+</body>
+</html>
